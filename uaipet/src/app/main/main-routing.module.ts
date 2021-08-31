@@ -5,7 +5,8 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 
 const routes: Routes = [
   { path: '', component: PageWrapperComponent, children: [
-    { path:'', component: HomeComponent}]},
+    { path:'', component: HomeComponent},
+]},
 ];
 
 @NgModule({
