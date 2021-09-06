@@ -1,0 +1,21 @@
+{
+  "usuarios": [
+    {
+      "Id": "",
+      "Name":"",
+      "Email":"",
+      "Password":""
+    }
+  ],
+  "abrigos": [
+    {
+      "Id": "",
+      "Name":"",
+      "Email":"",
+      "Password":"",
+      "Address":"",
+      "Phone":"",
+      "Description":""
+    }
+  ]
+}
