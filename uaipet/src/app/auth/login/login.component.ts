@@ -25,11 +25,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
   login() {
-    console.log();
     const user = this.userLogin.value;
     this.http.get('http://localhost:3000/users').subscribe((data: any) => {
       const exist = data.filter(
-        (d: User) => d.Email === user.email && d.Password === user.password
+        (d: User) => d.email === user.email && d.password === user.password
       );
       if (exist.length === 0) {
         console.log('Usuario ou senha inválidos');

@@ -12,14 +12,26 @@
 }
 .form {
   > mat-form-field {
-    width: 100%;
+    width: 80%;
+    align-self: center;
+    margin-left: 10%;
   }
   > div {
     display: flex;
     justify-content: center;
     > button {
       margin: auto;
-      width: 100%;
+      width: 50%;
     }
+  }
+}
+.flex {
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-between;
+  display: flex;
+  gap: 2rem;
+  > mat-form-field {
+    width: 50%;
   }
 }
