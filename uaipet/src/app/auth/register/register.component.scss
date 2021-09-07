@@ -1,0 +1,13 @@
+.form { 
+  > mat-form-field {
+      width: 100%;
+    }
+    > div {
+      display: flex;
+      justify-content: center;
+      > button {
+        margin: auto;
+        width: 100%;
+      }
+    }
+}
