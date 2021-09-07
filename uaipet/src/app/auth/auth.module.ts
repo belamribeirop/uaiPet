@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import {MatInputModule} from '@angular/material/input';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatInputModule} from '@angular/material/input';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MatInputModule
+    MatInputModule,
+    MatSlideToggleModule
   ]
 })
 export class AuthModule { }
