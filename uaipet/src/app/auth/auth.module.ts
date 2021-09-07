@@ -6,8 +6,9 @@ import { AuthComponent } from './auth/auth.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterOngComponent } from './RegisterOng/registerong.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RegisterOngComponent } from './RegisterOng/registerong.component';
     ReactiveFormsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 })
 export class AuthModule {}
