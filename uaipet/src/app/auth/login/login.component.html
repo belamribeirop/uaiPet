@@ -1,13 +1,16 @@
 <div class="container">
-  <form class="form">
-    <mat-form-field class="example-full-width" appearance="outline">
+  <span>Uai pet</span>
+  <form class="form" [formGroup]="userLogin" (ngSubmit)="login()">
+    <mat-form-field class="full-width" appearance="outline">
       <mat-label>Email</mat-label>
-      <input matInput value="" type="email">
+      <input matInput value="" type="email" formControlName="email">
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Senha</mat-label>
-      <input matInput type="password">
+      <input matInput type="password" formControlName="password">
     </mat-form-field>
+    <div>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!userLogin.valid">Entrar</button>
+    </div>
   </form>
 </div>
-
