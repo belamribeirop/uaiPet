@@ -1,7 +1,8 @@
-<mat-toolbar class='header'>
+<mat-toolbar class='header' color='primary'>
   <mat-icon aria-hidden="false" aria-label="Example home icon">pets</mat-icon>
   <span><a [routerLink]="['']">Uai Pet</a> </span>
   <div>
-    <span><a [routerLink]="['auth/register']"> Cadastre-se</a>| <a [routerLink]="['auth']"> Login</a></span>
+    <span *ngIf="user === undefined"><a [routerLink]="['auth/register']">Cadastre-se</a>| <a [routerLink]="['auth']"> Login</a></span>
+    <span *ngIf="user">Olá, {{user.name}}</span>
   </div>
 </mat-toolbar>

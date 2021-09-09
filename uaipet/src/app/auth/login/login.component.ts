@@ -2,14 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
-
-interface User {
-  Id: number;
-  Name: string;
-  Email: string;
-  Password: string;
-}
+import { AuthService } from 'src/app/auth.service';
+import { User } from 'src/interfaces';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +14,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
+    private auth: AuthService
   ) {}
 
   userLogin = this.fb.group({
@@ -30,15 +25,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
   login() {
-    console.log();
     const user = this.userLogin.value;
     this.http.get('http://localhost:3000/users').subscribe((data: any) => {
       const exist = data.filter(
-        (d: User) => d.Email === user.email && d.Password === user.password
+        (d: User) => d.email === user.email && d.password === user.password
       );
       if (exist.length === 0) {
         console.log('Usuario ou senha inválidos');
       } else {
+        this.auth.user = exist[0];
         this.router.navigate(['']);
       }
       console.log(exist);

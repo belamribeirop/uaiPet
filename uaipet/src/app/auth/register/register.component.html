@@ -1,1 +1,26 @@
-<p>Testando o resgister e o git </p>
+<div class="container">
+  <span>Faça seu cadastro</span>
+  <form class="form" [formGroup]="userRegister" (ngSubmit)="register()">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput value="" type="name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput value="" type="email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input matInput type="password" formControlName="password">
+    </mat-form-field>
+    <div>
+      <mat-slide-toggle formControlName="isOng"><span>Represento um abrigo</span></mat-slide-toggle>
+    </div>
+    <br>
+    <br>
+    <div>
+      <button mat-raised-button color="primary">Cadastrar</button>
+    </div>
+  </form>
+
+</div>

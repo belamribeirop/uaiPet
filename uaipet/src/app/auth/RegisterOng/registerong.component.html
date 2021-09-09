@@ -5,46 +5,42 @@
       <mat-label>Nome da Ong</mat-label>
       <input matInput value="" type="name" formControlName="name">
     </mat-form-field>
-    <mat-form-field class="full-width" appearance="outline">
-      <mat-label>Email</mat-label>
-      <input matInput value="" type="email" formControlName="email">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Telefone</mat-label>
+      <input matInput placeholder="Telefone" formControlName="telefone">
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="outline">
-      <mat-label>Senha</mat-label>
-      <input matInput type="password" formControlName="password">
+      <mat-label>Descrição</mat-label>
+      <textarea matInput placeholder="Descrição" formControlName="description"></textarea>
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Endereço</mat-label>
-      <textarea matInput placeholder="Endereço" formControlName="Adress"></textarea>
+      <textarea matInput placeholder="Endereço" formControlName="address"></textarea>
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
+    <div class="flex">
+    <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Complemento</mat-label>
-      <textarea matInput formControlName="Adress2"></textarea>
+      <textarea matInput formControlName="address2"></textarea>
     </mat-form-field>
-    <table class="example-full-width" cellspacing="0">
-
-      <td>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Cidade</mat-label>
-          <input matInput placeholder="Ex. San Francisco" formControlName="City">
-        </mat-form-field>
-      </td>
-      <td>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Estado</mat-label>
-          <input matInput placeholder="Ex. California" formControlName="State">
-        </mat-form-field>
-      </td>
-      <td>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>CEP</mat-label>
-          <input matInput #postalCode maxlength="8" placeholder="Ex. 30389028" value="30389028" formControlName="PostalCode">
-          <mat-hint align="end">{{postalCode.value.length}} / 8</mat-hint>
-        </mat-form-field>
-      </td>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>CEP</mat-label>
+      <input matInput #postalCode maxlength="8" placeholder="Ex. 30389028" value="30389028" formControlName="postalCode">
+      <mat-hint align="end">{{postalCode.value.length}} / 8</mat-hint>
+    </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Cidade</mat-label>
+        <input matInput placeholder="Ex. San Francisco" formControlName="city">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Ex. California" formControlName="state">
+      </mat-form-field>
+      </div>
       <div>
         <button mat-raised-button color="primary" type="submit" [disabled]="!userLogin.valid">Entrar</button>
       </div>
-    </table>
+
   </form>
 </div>
