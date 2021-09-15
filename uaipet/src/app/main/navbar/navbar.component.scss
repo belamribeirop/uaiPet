@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}

@@ -8,6 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AnimalsComponent } from './animals/animals.component';
+import { UaipetComponent } from './uaipet/uaipet.component';
+import { AdoptionComponent } from './adoption/adoption.component';
+import { OngsComponent } from './ongs/ongs.component';
+import { AnimalControlComponent } from './animal-control/animal-control.component';
+import { MyAnimalsComponent } from './my-animals/my-animals.component';
 
 
 @NgModule({
@@ -16,6 +23,13 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    NavbarComponent,
+    AnimalsComponent,
+    UaipetComponent,
+    AdoptionComponent,
+    OngsComponent,
+    AnimalControlComponent,
+    MyAnimalsComponent,
   ],
   imports: [
     CommonModule,
