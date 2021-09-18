@@ -15,7 +15,8 @@ import { AdoptionComponent } from './adoption/adoption.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { AnimalControlComponent } from './animal-control/animal-control.component';
 import { MyAnimalsComponent } from './my-animals/my-animals.component';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { MyAnimalsComponent } from './my-animals/my-animals.component';
     MainRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
+    MatTableModule,
+    MatTableDataSource,
   ]
 })
 export class MainModule { }
