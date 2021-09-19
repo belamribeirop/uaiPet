@@ -1,0 +1,26 @@
+.container {
+  padding-top: 3rem;
+  > span {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+  }
+}
+.content {
+  display: flex;
+  padding-left: 5rem;
+
+  > section {
+    width: 50vw;
+    margin: 10% auto;
+
+    span {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+      padding-left: 0.5rem;
+    }
+  }
+}

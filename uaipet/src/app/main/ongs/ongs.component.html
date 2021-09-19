@@ -1,1 +1,15 @@
-<p>ongs works!</p>
+<div class="container">
+  <span>Abrigos parceiros</span>
+  <div class="content">
+    <section class="text">
+      <div *ngFor="let ong of ongs">
+        <span>{{ ong.name }}</span>
+        <li>{{ ong.phone }}</li>
+        <li>{{ ong.description }}</li>
+      </div>
+    </section>
+    <section class="image">
+      <img />
+    </section>
+  </div>
+</div>

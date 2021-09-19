@@ -42,14 +42,34 @@
       "password": "tatata",
       "isOng": true,
       "id": "3UzYyq0"
+    },
+    {
+      "name": "Admin",
+      "email": "admin@admin",
+      "password": "admin",
+      "isOng": true,
+      "id": "gAQ3w_7"
     }
   ],
   "abrigos": [
     {
-      "id": "",
-      "Address": "",
-      "Phone": "",
-      "Description": ""
+      "id": "teste",
+      "name": "teste",
+      "address": "rua teste bairro teste",
+      "phone": "12345678",
+      "description": "testando uma descricao "
+    },
+    {
+      "name": "Animais Bh",
+      "phone": "987655432",
+      "description": "Abrigo para animais de rua",
+      "address": "rua x ",
+      "address2": "Casa",
+      "city": "bh",
+      "state": "mg",
+      "postalCode": "12344556",
+      "userId": "gAQ3w_7",
+      "id": "04H4qmV"
     }
   ]
 }

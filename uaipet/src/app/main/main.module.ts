@@ -15,7 +15,7 @@ import { AdoptionComponent } from './adoption/adoption.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { AnimalControlComponent } from './animal-control/animal-control.component';
 import { MyAnimalsComponent } from './my-animals/my-animals.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { MyAnimalsComponent } from './my-animals/my-animals.component';
     MainRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    RouterModule
-  ]
+    RouterModule,
+    HttpClientModule,
+  ],
 })
-export class MainModule { }
+export class MainModule {}
