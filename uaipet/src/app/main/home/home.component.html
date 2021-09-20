@@ -1,28 +1,14 @@
-<app-navbar></app-navbar>
-<body>
-<ul class="slider">
-    <li>
-        <input type="radio" id="slide1" name="slide" checked>
-          <label for="slide1"></label>
-          <img src="https://www.jornaldafranca.com.br/storage/app/media/01.%20Rosana/mulher%20com%20cachorro%20e%20gato.jpg" alt=" "/>
-    <li>
-        <input type="radio" id="slide2" name="slide">
-        <label for="slide2"></label>
-          <img src="https://i.pinimg.com/originals/fe/10/81/fe108104de7c1066e98188cdf7aaac9b.jpg" alt=" "/>
-    <li>
-        <input type="radio" id="slide3" name="slide">
-          <label for="slide3"></label>
-          <img src="https://petepop.ig.com.br/wp-content/uploads/2020/08/Cao-Gato-Juntos-Pixabay.jpg" alt=" "/>
+<div class="container">
+  <ul class="slider">
+    <li *ngFor="let image of images; let i = index">
+      <input
+        type="radio"
+        id="{{ i }}"
+        name="slide"
+        checked="i === 0 ? true : false"
+      />
+      <label for="{{ i }}"></label>
+      <img src="{{ image }}" alt=" " />
     </li>
-    <li>
-        <input type="radio" id="slide4" name="slide">
-          <label for="slide4"></label>
-          <img src="https://horacampinas.com.br/wp-content/uploads/2021/04/ong-7-patas-covid.jpg" alt=" "/>
-    </li>
-    <li>
-        <input type="radio" id="slide5" name="slide">
-          <label for="slide5"></label>
-          <img src="https://s.zst.com.br/cms-assets/2021/02/enxoval-para-gato-1-.jpg" alt=" "/>
-    </li>
-</ul>
-</body>
+  </ul>
+</div>

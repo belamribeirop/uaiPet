@@ -1,67 +1,62 @@
-* { margin: 0; padding: 0; }
-
-body{
-    background-image: url(https://images-shoptime.b2w.io/produtos/01/00/sku/32985/4/32985400_1GG.jpg);
-}
 .slider {
-    display: block;
-    height: 100%;
-    width: 950px;
-    margin: auto;
-    margin-top: 2px;
-    position: relative;
+  display: block;
+  width: 950px;
+  margin: auto;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  position: relative;
 }
 
 .slider li {
-    list-style: none;
-    position: absolute;
+  list-style: none;
+  position: absolute;
 }
 
 .slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
+  margin: auto;
+  height: 30rem;
+  width: 100%;
+  vertical-align: center;
 }
 .slider input {
-    display: none;
+  display: none;
 }
 .slider label {
-    background-color:#DAA520;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-    border-radius:60%;
+  background-color: #daa520;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+  border-radius: 60%;
 }
 
 .slider li:nth-child(1) label {
-    left: 420px;
+  left: 420px;
 }
 
 .slider li:nth-child(2) label {
-    left: 450px;
+  left: 450px;
 }
 
 .slider li:nth-child(3) label {
-    left: 480px;
+  left: 480px;
 }
 .slider li:nth-child(4) label {
-    left: 510px;
+  left: 510px;
 }
 .slider li:nth-child(5) label {
-    left: 540px;
+  left: 540px;
 }
 .slider img {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
