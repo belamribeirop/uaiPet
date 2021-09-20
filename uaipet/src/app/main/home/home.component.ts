@@ -15,5 +15,6 @@ export class HomeComponent implements OnInit {
     'https://horacampinas.com.br/wp-content/uploads/2021/04/ong-7-patas-covid.jpg',
     'https://i.pinimg.com/originals/fe/10/81/fe108104de7c1066e98188cdf7aaac9b.jpg',
     'https://s.zst.com.br/cms-assets/2021/02/enxoval-para-gato-1-.jpg',
+    'https://petepop.ig.com.br/wp-content/uploads/2020/08/Cao-Gato-Juntos-Pixabay.jpg',
   ];
 }
