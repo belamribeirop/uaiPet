@@ -1,5 +1,13 @@
 .container {
   display: flex;
   justify-content: flex-end;
-  height: 2.5rem;
+  align-items: center;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  margin: 0;
+  span {
+    margin: 0;
+    padding: 0;
+    height: 1.5rem;
+  }
 }
