@@ -14,10 +14,14 @@ import { UaipetComponent } from './uaipet/uaipet.component';
 import { AdoptionComponent } from './adoption/adoption.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { AnimalControlComponent } from './animal-control/animal-control.component';
-import { MyAnimalsComponent } from './my-animals/my-animals.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,6 @@ import { MatTableDataSource } from '@angular/material/table';
     AdoptionComponent,
     OngsComponent,
     AnimalControlComponent,
-    MyAnimalsComponent,
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,12 @@ import { MatTableDataSource } from '@angular/material/table';
     RouterModule,
     HttpClientModule,
     MatTableModule,
-    MatTableDataSource,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatChipsModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
 })
 export class MainModule {}

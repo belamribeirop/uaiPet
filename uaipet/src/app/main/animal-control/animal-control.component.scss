@@ -1,0 +1,17 @@
+.table {
+  width: 100%;
+  > ng-container {
+    th {
+      font-weight: bold;
+    }
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.column {
+  margin: 1rem;
+}

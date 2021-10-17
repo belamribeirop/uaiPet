@@ -1,0 +1,32 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 3.5fr;
+  padding: 1rem;
+  min-height: calc(100vh - 6.5rem);
+}
+.aside {
+  margin-top: 5rem;
+  span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  div {
+    padding-top: 1rem;
+  }
+}
+.animals {
+  border-left: 1px solid #d1d1d1;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.animal {
+  width: 20vw;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.animal:hover {
+  transform: scale(1.05);
+}

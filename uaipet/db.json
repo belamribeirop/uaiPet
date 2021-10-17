@@ -49,6 +49,20 @@
       "password": "admin",
       "isOng": true,
       "id": "gAQ3w_7"
+    },
+    {
+      "name": "testepreaula",
+      "email": "testepreaula@angular",
+      "password": "testepreaula",
+      "isOng": true,
+      "id": "dGunVIJ"
+    },
+    {
+      "name": "testeaula",
+      "email": "testeaula@teste",
+      "password": "teste",
+      "isOng": true,
+      "id": "OIpNPsK"
     }
   ],
   "abrigos": [
@@ -70,6 +84,28 @@
       "postalCode": "12344556",
       "userId": "gAQ3w_7",
       "id": "04H4qmV"
+    }
+  ],
+  "animais":[
+    {
+      "name":"bob",
+      "age":"filhote",
+      "category":"vira lata"
+    },
+    {
+      "name":"flor",
+      "age":"adulto",
+      "category":"poodle"
+    },
+    {
+      "name":"diana",
+      "age":"adulto",
+      "category":"vira lata"
+    },
+    {
+      "name":"zara",
+      "age":"filhote",
+      "category":"pastor alemao"
     }
   ]
 }

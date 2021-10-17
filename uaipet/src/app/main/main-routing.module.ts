@@ -6,7 +6,7 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { AdoptionComponent } from './adoption/adoption.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { UaipetComponent } from './uaipet/uaipet.component';
-import { MyAnimalsComponent } from './my-animals/my-animals.component';
+import { AnimalControlComponent } from './animal-control/animal-control.component';
 
 const routes: Routes = [
   {
@@ -14,11 +14,10 @@ const routes: Routes = [
     component: PageWrapperComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'animals', component: AnimalsComponent },
       { path: 'adoption', component: AdoptionComponent },
       { path: 'ongs', component: OngsComponent },
       { path: 'uaipet', component: UaipetComponent },
-      { path: 'control', component: MyAnimalsComponent },
+      { path: 'control', component: AnimalControlComponent },
     ],
   },
 ];

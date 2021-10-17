@@ -1,10 +1,20 @@
 .container {
+  background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 2rem;
   padding: 0 2rem;
+  font-size: 1rem;
+  gap: 0.2rem;
   a {
     color: #000 !important;
     text-decoration: none !important;
+    cursor: pointer;
+  }
+  a:hover {
+    font-style: italic;
+  }
+  span {
+    font-size: 0.4rem;
   }
 }

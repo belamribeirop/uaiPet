@@ -1,1 +1,38 @@
-<p>animals works!</p>
+<app-header></app-header>
+<div class="page">
+  <div class="aside">
+    <span>Filtros</span>
+    <mat-chip-list aria-label="Filters">
+      <mat-chip *ngFor="let chip of filters" (click)="applyFilter(chip)"
+        >{{ chip }}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+  <div>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        #search
+        id="search"
+        matInput
+        placeholder="search..."
+        value=""
+        type="search"
+        (keyup)="applySearch(search.value)"
+      />
+    </mat-form-field>
+    <div class="animals">
+      <mat-card
+        class="animal"
+        *ngFor="let animal of animals"
+        (click)="openDetails(animal.id)"
+      >
+        <img mat-card-image src="{{ animal.image }}" />
+        <mat-card-title>{{ animal.name }}</mat-card-title>
+        <mat-card-subtitle
+          >{{ animal.category }} | {{ animal.age }}</mat-card-subtitle
+        >
+      </mat-card>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
