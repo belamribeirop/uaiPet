@@ -1,3 +1,4 @@
+import { ControlDialogComponent } from './animal-control/control-dialog/control-dialog.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
@@ -22,6 +23,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,10 +38,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     AdoptionComponent,
     OngsComponent,
     AnimalControlComponent,
+    ControlDialogComponent,
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatIconModule,
     RouterModule,
@@ -50,6 +56,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatChipsModule,
     MatButtonModule,
     MatDialogModule,
+    MatSlideToggleModule,
   ],
 })
 export class MainModule {}

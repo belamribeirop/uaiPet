@@ -86,26 +86,20 @@
       "id": "04H4qmV"
     }
   ],
-  "animais":[
+  "animais": [
     {
-      "name":"bob",
-      "age":"filhote",
-      "category":"vira lata"
-    },
-    {
-      "name":"flor",
-      "age":"adulto",
-      "category":"poodle"
-    },
-    {
-      "name":"diana",
-      "age":"adulto",
-      "category":"vira lata"
-    },
-    {
-      "name":"zara",
-      "age":"filhote",
-      "category":"pastor alemao"
+      "name": "fsdf",
+      "caracteristicas": "car1",
+      "gender": "fem",
+      "health": "saudavel",
+      "size": "garnde",
+      "age": "dfv",
+      "color": "vdfb",
+      "raca": "gfbb",
+      "category": "bfgbsf",
+      "adestrado": true,
+      "adopted": false,
+      "id": 1
     }
   ]
 }

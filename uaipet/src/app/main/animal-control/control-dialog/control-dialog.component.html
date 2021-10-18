@@ -1,1 +1,111 @@
-<p>control-dialog works!</p>
+<form class="form" [formGroup]="animal" (ngSubmit)="saveAnimal()">
+  <div class="container">
+    <div class="image">
+      <img />
+    </div>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="caracteristicas"
+        matInput
+        placeholder="Caracteristicas"
+        value=""
+        formControlName="caracteristicas"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="genero"
+        matInput
+        placeholder="Genero"
+        value=""
+        formControlName="gender"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="saude"
+        matInput
+        placeholder="Saúde"
+        value=""
+        formControlName="health"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="tamanho"
+        matInput
+        placeholder="Tamanho"
+        value=""
+        formControlName="size"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="nome"
+        matInput
+        placeholder="Nome"
+        value=""
+        formControlName="name"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="idade"
+        matInput
+        placeholder="Idade"
+        value=""
+        formControlName="age"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="color"
+        matInput
+        placeholder="Cor"
+        value=""
+        formControlName="color"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="raca"
+        matInput
+        placeholder="Raça"
+        value=""
+        formControlName="raca"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input
+        id="category"
+        matInput
+        placeholder="Categoria"
+        value=""
+        formControlName="category"
+      />
+    </mat-form-field>
+    <div></div>
+    <div>
+      <mat-slide-toggle formControlName="adestrado"
+        ><span>Adestrado</span></mat-slide-toggle
+      >
+    </div>
+
+    <div>
+      <mat-slide-toggle formControlName="adopted"
+        ><span>Adotado</span></mat-slide-toggle
+      >
+    </div>
+    <div style="justify-content: flex-end">
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="!animal.valid"
+      >
+        Salvar
+      </button>
+    </div>
+  </div>
+</form>
