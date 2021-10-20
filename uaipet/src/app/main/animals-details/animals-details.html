@@ -1,22 +1,27 @@
-
-<modal>
-    <h1>NOME</h1>
-    <div class="body">
-        <p>RAÇA</p>
-        <p>Caracteristicas</p>
-        <p>Localização</p>
-        <p>Adestrado</p>
-        <p>Saúde</p>
-    </div>
-    <div class="example-button-container">
-        <button
-          mat-fab
-          color="primary"
-          aria-label="Example icon button with a delete icon"
-        >
-          <mat-icon>Adotar</mat-icon>
-        </button>
+<div  class="hhidden" id="modalDetailsAnimal">
+  <div class="mmodal container">
+    <div class="mmodal-body px-3 py-3">
+      <div class="body d-flex justify-content-between">
+        <div> 
+          <img [src]="animal.image" width="200" alt="">
+          <h1> nome: {{animal.name}}</h1>
+        </div>
+        <div class="mx-5">
+          <p>raça: {{animal.category}}</p>
+          <p>idade: {{animal.age}}</p>
+          <p>tipo: {{animal.type}}</p>
+        </div>
       </div>
-</modal>
+      <div class="d-flex justify-content-end">
+
+          <button>
+            Adotar
+          </button>
+        </div>
+      </div>
+  </div>
+  <div class="mmodal-background"></div>
+</div>
+
 
 

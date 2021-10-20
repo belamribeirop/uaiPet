@@ -1,21 +1,38 @@
-import { Component, ElementRef, OnInit } from "@angular/core"
+import { Component, ElementRef, OnInit, Input } from "@angular/core"
+
+type Animal = {
+    id: string;
+    name: string;
+    category: string;
+    type: string;
+    age: string;
+    image: string;
+  };
 
 @Component({
     selector: 'app-animals-details',
-    templateUrl: './animals-details.component.html',
-    styleUrls: ['./animals-details.component.scss'],
+    templateUrl: './animals-details.html',
+    styleUrls: ['./animals-details.scss'],
 })
-export class ModalComponent implements OnInit {
-    constructor(private el: ElementRef) { }
+
+
+export class AnimalDetailsComponent implements OnInit {
+
+    @Input() animal: Animal;     
+    constructor(private el: ElementRef) {
+
+
+     }
     ngOnInit() {
-        // we added this so that when the backdrop is clicked the modal is closed.
         this.el.nativeElement.addEventListener('click', ()=> {
             this.close()
         })
     }
     close() {
-        this.el.nativeElement.classList.remove('sshow')
-        this.el.nativeElement.classList.add('hhidden')
+        let modal  = document.getElementById('modalDetailsAnimal');
+        modal?.classList.remove('sshow');
+        modal?.classList.add('hhidden');
+
     }
 }
 

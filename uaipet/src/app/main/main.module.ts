@@ -22,6 +22,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AnimalDetailsComponent } from './animals-details/animals-details';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AdoptionComponent,
     OngsComponent,
     AnimalControlComponent,
+    AnimalDetailsComponent,
   ],
   imports: [
     CommonModule,
