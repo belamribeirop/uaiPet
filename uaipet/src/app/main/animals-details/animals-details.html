@@ -1,0 +1,27 @@
+<div  class="hhidden" id="modalDetailsAnimal">
+  <div class="mmodal container">
+    <div class="mmodal-body px-3 py-3">
+      <div class="body d-flex justify-content-between">
+        <div> 
+          <img [src]="animal.image" width="200" alt="">
+          <h1> nome: {{animal.name}}</h1>
+        </div>
+        <div class="mx-5">
+          <p>raça: {{animal.category}}</p>
+          <p>idade: {{animal.age}}</p>
+          <p>tipo: {{animal.type}}</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+
+          <button>
+            Adotar
+          </button>
+        </div>
+      </div>
+  </div>
+  <div class="mmodal-background"></div>
+</div>
+
+
+

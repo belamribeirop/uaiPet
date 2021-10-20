@@ -25,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AnimalDetailsComponent } from './animals-details/animals-details';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     OngsComponent,
     AnimalControlComponent,
     ControlDialogComponent,
+    AnimalDetailsComponent,
   ],
   imports: [
     CommonModule,

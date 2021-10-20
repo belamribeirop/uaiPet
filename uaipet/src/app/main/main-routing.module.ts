@@ -8,6 +8,9 @@ import { OngsComponent } from './ongs/ongs.component';
 import { UaipetComponent } from './uaipet/uaipet.component';
 import { AnimalControlComponent } from './animal-control/animal-control.component';
 
+ 
+
+
 const routes: Routes = [
   {
     path: '',
