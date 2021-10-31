@@ -2,14 +2,11 @@ import { AnimalsComponent } from './animals/animals.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { PageWrapperComponent } from '../shared/page-wrapper/page-wrapper.component';
 import { AdoptionComponent } from './adoption/adoption.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { UaipetComponent } from './uaipet/uaipet.component';
 import { AnimalControlComponent } from './animal-control/animal-control.component';
-
- 
-
 
 const routes: Routes = [
   {

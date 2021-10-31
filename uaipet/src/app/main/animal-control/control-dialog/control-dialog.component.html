@@ -1,7 +1,11 @@
 <form class="form" [formGroup]="animal" (ngSubmit)="saveAnimal()">
   <div class="container">
     <div class="image">
-      <img />
+      <input type="file" name="myImage" accept="image/*" id="input-file-id" />
+      <br />
+      <label for="input-file-id" class="md-button md-raised md-primary"
+        >Choose Files</label
+      >
     </div>
     <mat-form-field class="example-full-width" appearance="outline">
       <input
