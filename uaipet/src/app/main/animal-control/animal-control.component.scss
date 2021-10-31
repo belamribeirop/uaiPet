@@ -1,5 +1,7 @@
 .table {
-  width: 100%;
+  position: absolute;
+  min-width:100%;
+  max-width:100%;
   > ng-container {
     th {
       font-weight: bold;

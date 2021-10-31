@@ -1,7 +1,7 @@
 <button mat-raised-button color="primary" (click)="addAnimal()">
   Adicionar
 </button>
-<mat-table #table [dataSource]="dataSource" matSort>
+<mat-table #table [dataSource]="dataSource" matSort style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
   <ng-container matColumnDef="position">
     <th mat-header-cell *matHeaderCellDef>No.</th>
     <td mat-cell *matCellDef="let animal">{{ animal.position }}</td>
