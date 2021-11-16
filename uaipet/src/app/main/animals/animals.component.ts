@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 type Animal = {
   id: string;
   name: string;
@@ -18,8 +19,19 @@ export class AnimalsComponent implements OnInit {
   allAnimals: Animal[] = [];
   animals: Animal[] = [];
   filters = ['cachorro', 'gato', 'filhote', 'adulto'];
-  selectedAnimals: Animal;
+
+  // Aqui! selectedAnimals: Animal;
+  selectedAnimals: Animal = {
+    id: '0',
+    name: 'bob',
+    age: 'filhote',
+    type: 'cachorro',
+    category: 'vira lata',
+    image: 'https://static.vecteezy.com/ti/fotos-gratis/p2/963511-filhote-de-cachorro-poodle-branco-bonito-foto.jpg'
+  };
+
   ngOnInit(): void {
+
     this.allAnimals = [
       {
         id: '0',
@@ -27,8 +39,8 @@ export class AnimalsComponent implements OnInit {
         age: 'filhote',
         type: 'cachorro',
         category: 'vira lata',
-        image:
-          'https://cidadeverde.com/assets/uploads/posts/e769b0d28c90b17e276c0c3423de0a2e.jpg',
+        image: 'https://static.vecteezy.com/ti/fotos-gratis/p2/963511-filhote-de-cachorro-poodle-branco-bonito-foto.jpg',
+          // 'https://cidadeverde.com/assets/uploads/posts/e769b0d28c90b17e276c0c3423de0a2e.jpg',
       },
       {
         id: '1',
@@ -58,6 +70,7 @@ export class AnimalsComponent implements OnInit {
           'https://blog.cobasi.com.br/wp-content/uploads/2020/11/pastor-alemao-filhote-studio.png',
       },
     ];
+
     this.animals = [...this.allAnimals];
   }
   openDetails(id: string) {
